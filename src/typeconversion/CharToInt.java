@@ -6,8 +6,13 @@ public class CharToInt {
         int ashok = a;
         System.out.println(ashok);
 
-        char num = '5';
-        int val = Integer.parseInt(String.valueOf(num));
+        int num = '5';
+        char val = (char) num;
         System.out.println(val);
+
+        String number = "12456";
+        long value = Long.parseLong(number);
+        System.out.println(value);
+
     }
 }

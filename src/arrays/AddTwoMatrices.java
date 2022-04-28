@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class AddTwoMatrices {
     public static void main(String[] args) {
         int rows = 3, columns = 3;
@@ -20,6 +22,22 @@ public class AddTwoMatrices {
             }
             System.out.println();
         }
+
+        System.out.println("Sort by column");
+
+        int[][] sortArray = { { 39, 27, 11, 42 }, { 10, 93, 91, 90 }, { 54, 78, 56, 89 }, { 24, 64, 20, 65 } };
+        int sortedColumn = 2, r = sortArray.length;
+        for (int i = 0; i < r; i++) {
+            for (int k = i+1; k < r; k++) {
+                if ((sortArray[i][sortedColumn] > sortArray[k][sortedColumn])) {
+                    int temp = sortArray[k][sortedColumn];
+                    sortArray[k][sortedColumn] = sortArray[i][sortedColumn];
+                    sortArray[i][sortedColumn] = temp;
+                }
+            }
+        }
+
+        System.out.println(Arrays.deepToString(sortArray));
 
     }
 }

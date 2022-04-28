@@ -21,6 +21,7 @@ public class JoinLists {
         list2.add("d");
         list2.add("e");
         list2.add("f");
+        
 
         ArrayList<String> joinedList = new ArrayList<>();
         joinedList.addAll(list1);
