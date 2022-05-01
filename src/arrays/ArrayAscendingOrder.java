@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayAscendingOrder {
     public static void main(String[] args) {
-        int[] arr = { 30, 48, 20, 12, 8, 3, 25 };
+        int[] arr = { -2, 45, 0, 11, -9 };
         int temp = 0;
 
         for (int i = 0; i < arr.length; i++) {

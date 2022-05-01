@@ -70,7 +70,7 @@ public class NumberConversion {
 
     static void decimalToBinary () {
         System.out.println("Decimal to Binary");
-        int num = 33, remainder = 0;
+        int num = 7, remainder = 0;
         String binaryNo = "";
         while (num != 0) {
             remainder = num % 2;
