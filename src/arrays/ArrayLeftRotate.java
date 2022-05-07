@@ -9,6 +9,7 @@ public class ArrayLeftRotate {
             arr[i] = arr[i + 1];
         }
         arr[arr.length - 1] = first;
+
     }
 
     public static void leftRotate(int[] arr, int r) {
